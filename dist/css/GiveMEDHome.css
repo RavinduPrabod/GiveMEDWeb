@@ -1,0 +1,336 @@
+﻿<style >
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked) > label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+        .rate:not(:checked) > label:before {
+            content: '★ ';
+        }
+
+    .rate > input:checked ~ label {
+        color: #ffc700;
+    }
+
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;
+    }
+
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+
+.rate1 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate1:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate1:not(:checked) > label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+        .rate1:not(:checked) > label:before {
+            content: '★ ';
+        }
+
+    .rate1 > input:checked ~ label {
+        color: #ffc700;
+    }
+
+    .rate1:not(:checked) > label:hover,
+    .rate1:not(:checked) > label:hover ~ label {
+        color: #deb217;
+    }
+
+    .rate1 > input:checked + label:hover,
+    .rate1 > input:checked + label:hover ~ label,
+    .rate1 > input:checked ~ label:hover,
+    .rate1 > input:checked ~ label:hover ~ label,
+    .rate1 > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+
+.rate2 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate2:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate2:not(:checked) > label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+        .rate2:not(:checked) > label:before {
+            content: '★ ';
+        }
+
+    .rate2 > input:checked ~ label {
+        color: #ffc700;
+    }
+
+    .rate2:not(:checked) > label:hover,
+    .rate2:not(:checked) > label:hover ~ label {
+        color: #deb217;
+    }
+
+    .rate2 > input:checked + label:hover,
+    .rate2 > input:checked + label:hover ~ label,
+    .rate2 > input:checked ~ label:hover,
+    .rate2 > input:checked ~ label:hover ~ label,
+    .rate2 > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.banner-img {
+    background-color: black;
+    background-attachment: fixed;
+    background-position-y: 0;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+    .banner-img:after {
+        content: '';
+        background: rgba(61, 35, 28, 0.3);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+section {
+    padding: 70px 0;
+}
+
+    section h2 {
+        font-size: 4rem;
+        font-weight: 400;
+        padding-bottom: 30px;
+        color: #3d231c;
+        text-align: center;
+    }
+
+.car
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    background: #91cb55;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    opacity: 1;
+}
+
+.carousel .carousel-content {
+    padding: 30px 80px;
+}
+
+    .carousel .carousel-content h5 {
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 30px;
+        color: #3d231c;
+    }
+
+    .carousel .carousel-content p {
+        font-size: 1.4rem;
+        color: #3d231c;
+    }
+
+.section-bg {
+    background: #f4f4f4;
+}
+
+#campaigns h2 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: normal;
+}
+
+#campaigns .search-box {
+    background: #fff;
+    border-radius: 40px;
+    padding: .4rem .5rem .4rem 1.4rem;
+    border: solid 2px #e2e2e2;
+    display: flex;
+}
+
+    #campaigns .search-box form {
+        display: flex;
+        flex: 1;
+    }
+
+    #campaigns .search-box input {
+        border: 0;
+        font-size: 20px;
+        flex: 1;
+    }
+
+        #campaigns .search-box input:focus,
+        #campaigns .search-box input:active,
+        #campaigns .search-box input:hover,
+        #campaigns .search-box input:focus-visible {
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+        }
+
+    #campaigns .search-box button {
+        background: #91cb55;
+        border-radius: 50%;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: 0;
+        font-size: 30px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+#campaigns .campaign-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+    #campaigns .campaign-card .camp-top {
+        display: flex;
+    }
+
+        #campaigns .campaign-card .camp-top h6 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #3d231c;
+            line-height: 1.8rem;
+            text-transform: capitalize;
+            flex: 1;
+            padding-right: 10px;
+        }
+
+        #campaigns .campaign-card .camp-top img {
+            width: 70%;
+            height: 165px;
+            object-fit: cover;
+            flex: 1;
+        }
+
+    #campaigns .campaign-card .progress-value {
+        display: flex;
+        align-items: center;
+    }
+
+        #campaigns .campaign-card .progress-value .camp-amt {
+            font-size: 2rem;
+            color: #3d231c;
+        }
+
+        #campaigns .campaign-card .progress-value .camp-percent {
+            margin-left: auto;
+        }
+
+    #campaigns .campaign-card .camp-text {
+        color: #3d231c;
+    }
+
+    #campaigns .campaign-card button {
+        background: #91cb55;
+        border-radius: 40px;
+        padding: .2rem 1rem;
+        border: solid 2px #91cb55;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #3d231c;
+        text-transform: uppercase;
+    }
+
+        #campaigns .campaign-card button:hover {
+            background: #fff;
+        }
+
+.progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 1rem 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+</style >
